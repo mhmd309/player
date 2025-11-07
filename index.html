@@ -81,24 +81,12 @@
     .album-art {
       width: 350px;
       height: 350px;
-      border-radius: 50%;
+      border-radius: 50px;
       object-fit: cover;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease;
-    }
-
-    .album-art.playing {
-      animation: rotate 20s linear infinite;
-    }
-
-    @keyframes rotate {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
+      margin: 15px auto 0;
+      display: block;
     }
 
     .song-info {
@@ -867,5 +855,6 @@
     });
   </script>
 </body>
+
 
 </html>
